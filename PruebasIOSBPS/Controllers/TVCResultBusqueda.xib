@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="TVCResultBusqueda" customModule="PruebasIOSBPS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="483" height="206"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="483" height="205"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="cell" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="18O-Li-RkD">
+                        <rect key="frame" x="159" y="0.0" width="324" height="68"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="loK-Gn-6Rn">
+                        <rect key="frame" x="159" y="68" width="324" height="68"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="76k-TZ-3N0">
+                        <rect key="frame" x="0.0" y="0.0" width="159" height="205"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="UQT-FG-CSx">
+                        <rect key="frame" x="159" y="136" width="324" height="68"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="UQT-FG-CSx" firstAttribute="height" secondItem="loK-Gn-6Rn" secondAttribute="height" id="0ip-f1-m9t"/>
+                    <constraint firstItem="76k-TZ-3N0" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" id="2cJ-bF-MmG"/>
+                    <constraint firstItem="UQT-FG-CSx" firstAttribute="top" secondItem="loK-Gn-6Rn" secondAttribute="bottom" id="4LL-7B-2Tw"/>
+                    <constraint firstItem="UQT-FG-CSx" firstAttribute="width" secondItem="loK-Gn-6Rn" secondAttribute="width" id="5PM-jw-xbS"/>
+                    <constraint firstItem="76k-TZ-3N0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="79G-u0-pOP"/>
+                    <constraint firstItem="loK-Gn-6Rn" firstAttribute="top" secondItem="18O-Li-RkD" secondAttribute="bottom" id="BPv-dn-SDW"/>
+                    <constraint firstItem="18O-Li-RkD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="CgF-ZB-dwo"/>
+                    <constraint firstItem="76k-TZ-3N0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="KLa-d0-aHe"/>
+                    <constraint firstItem="loK-Gn-6Rn" firstAttribute="width" secondItem="18O-Li-RkD" secondAttribute="width" id="NX4-Ko-8QW"/>
+                    <constraint firstItem="18O-Li-RkD" firstAttribute="leading" secondItem="76k-TZ-3N0" secondAttribute="trailing" id="Vmo-6l-8aU"/>
+                    <constraint firstItem="UQT-FG-CSx" firstAttribute="centerX" secondItem="loK-Gn-6Rn" secondAttribute="centerX" id="c5a-vC-br0"/>
+                    <constraint firstItem="loK-Gn-6Rn" firstAttribute="height" secondItem="18O-Li-RkD" secondAttribute="height" id="fgW-z2-bGO"/>
+                    <constraint firstItem="loK-Gn-6Rn" firstAttribute="centerX" secondItem="18O-Li-RkD" secondAttribute="centerX" id="gp4-pJ-xeL"/>
+                    <constraint firstItem="76k-TZ-3N0" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.33" id="jbg-qM-rrR"/>
+                    <constraint firstItem="18O-Li-RkD" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.67" id="omY-PV-x5j"/>
+                    <constraint firstItem="18O-Li-RkD" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.33" id="qtq-6o-RTg"/>
+                </constraints>
+                <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+            </tableViewCellContentView>
+            <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+            <connections>
+                <outlet property="_ImgProducto" destination="76k-TZ-3N0" id="KmC-G6-VL9"/>
+                <outlet property="_LabelPrecio" destination="loK-Gn-6Rn" id="AHX-m9-dRf"/>
+                <outlet property="_LabelTitulo" destination="18O-Li-RkD" id="eyh-Uf-KjV"/>
+                <outlet property="_LabelUbicacion" destination="UQT-FG-CSx" id="XSQ-CH-eEk"/>
+            </connections>
+            <point key="canvasLocation" x="117.5" y="144"/>
+        </tableViewCell>
+    </objects>
+</document>
